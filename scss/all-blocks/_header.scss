@@ -1,0 +1,92 @@
+.header {
+    margin-top: 10px;
+
+    .container {
+        @include Flex;
+    }
+
+    &__mobil {
+        display: none;
+    }
+
+}
+
+.nav {
+    &__ul {
+        display: flex;
+    }
+
+    &__li+&__li {
+        padding-left: 33px;
+    }
+
+    &__link {
+        @include Link;
+        text-transform: uppercase;
+
+        &:hover {
+            color: #333D4B;
+            font-family: "Barlow";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 15px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+
+.btn {
+    &__menu {
+        display: none;
+    }
+
+    &__exit {
+        display: none;
+    }
+
+    & {
+        background-color: #fff;
+        border: none;
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 602px) {
+    .nav {
+        display: none;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    .btn__menu {
+        display: block;
+    }
+
+    .btn:focus {
+
+        .btn__menu {
+            display: none;
+        }
+
+        .btn__exit {
+            display: block;
+        }
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__mobil {
+        display: block;
+    }
+
+
+}

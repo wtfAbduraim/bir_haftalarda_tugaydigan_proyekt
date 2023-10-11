@@ -1,0 +1,89 @@
+.about {
+
+    padding-top: 200px;
+
+    .container {
+        display: flex;
+        background: url("../../imges/Group\ 13\ \(1\)\ \(1\).png") no-repeat;
+        max-width: 1111px;
+        width: 100%;
+        height: 196px;
+        border-radius: 10px;
+        padding: 20px;
+        background-size: cover;
+        color: var(--color-Grey);
+    }
+
+    &__div {
+        margin-top: 110px;
+    }
+
+    &__div+&__div {
+        margin-left: 30px;
+    }
+
+    &__h2 {
+        color: var(--color-Blue);
+        text-align: center;
+        font-family: "Fraunces";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 32px;
+    }
+
+    &__text {
+        width: 255px;
+        color: var(--color-Blue);
+        text-align: center;
+        font-family: "Barlow";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+}
+
+@media only screen and (max-width: 689px) {
+    .about .container {
+        background-image: url("../imges/Group\ 13\ \(1\)\ \(1\).png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 118px;
+    }
+
+    .about__div {
+        display: flex;
+    }
+
+    .about__h2 {
+        margin-left: 29px;
+    }
+
+    .about__text {
+        font-size: 15px;
+        line-height: 25px;
+        margin-left: 29px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .about .container {
+        background-image: url("../../imges/Group\ 13\ \(1\)\ \(1\).png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 72px;
+    }
+
+    .about__pic {
+        width: 200px;
+        height: 151px;
+    }
+
+    .about__div_2 {
+        flex-direction: column;
+        margin-left: 46px;
+    }
+
+}
