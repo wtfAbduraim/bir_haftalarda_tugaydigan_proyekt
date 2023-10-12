@@ -1,0 +1,204 @@
+.our {
+    .container {
+        background-color: var(--color-Blue);
+        max-width: 1280px;
+        width: 100%;
+        height: 557px;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    &__title {
+        color: var(--color-Light);
+        text-align: center;
+        font-family: "Fraunces";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 48px;
+        padding-top: 112px;
+    }
+
+    &__text {
+        width: 540px;
+        color: var(--color-Light);
+        text-align: center;
+        font-family: "Barlow";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        opacity: 0.7;
+        margin-left: 350px;
+    }
+
+    &__ul {
+        display: flex;
+    }
+
+    &__li+&__li {
+        margin-left: 30px;
+    }
+
+    &__li {
+        width: 350px;
+        height: 382px;
+        border-radius: 8px;
+        background: var(--color-Cyan);
+        text-align: center;
+        padding-top: 72px;
+        margin-left: 20px;
+    }
+
+    &__pic {
+        margin-bottom: 40px;
+    }
+
+    &__h3 {
+        width: 255px;
+        color: var(--color-Light);
+        text-align: center;
+        font-family: "Fraunces";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 32px;
+        margin-left: 47px;
+        margin-bottom: 24px;
+    }
+
+    &__p {
+        width: 255px;
+        color: var(--color-Light);
+        text-align: center;
+        font-family: "Barlow";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        margin-left: 47px;
+    }
+}
+
+@media only screen and (max-width: 689px) {
+    .our .container {
+        background-color: var(--color-Blue);
+        height: 573px;
+        max-width: 689px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .our__title {
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        line-height: 48px;
+    }
+
+    .our__text {
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        line-height: 25px;
+        margin-left: -1px;
+    }
+
+    .our__ul {
+        flex-direction: column;
+        padding-top: 70px;
+        margin-left: -25px;
+    }
+
+    .our__li {
+        width: 573px;
+        height: 180px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: #0E8784;
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .our__li+.our__li {
+        margin-top: 30px;
+    }
+
+    .our__pic {
+        width: 56px;
+        height: 56px;
+        margin-top: 50px;
+        margin-left: 70px;
+    }
+
+    .our__h3 {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+    }
+
+    .our__p {
+        width: 344px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-left: 20px;
+    }
+
+    .pic {
+        height: 39px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .our .container {
+        width: 327px;
+        height: 902px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .our__title {
+        width: 279px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .our__text {
+        width: 279px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .our__ul {
+        flex-direction: column;
+        margin-left: -55px;
+    }
+
+    .our__li {
+        width: 279px;
+        height: 382px;
+        flex-direction: column;
+    }
+
+    .our__pic {
+        margin-left: 110px;
+    }
+
+    .our__h3 {
+        width: 255px;
+        font-size: 24px;
+        line-height: 32px;
+        margin-left: -1px;
+    }
+
+    .our__p {
+        width: 212px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}

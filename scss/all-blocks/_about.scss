@@ -12,6 +12,7 @@
         padding: 20px;
         background-size: cover;
         color: var(--color-Grey);
+        margin-bottom: 500px;
     }
 
     &__div {
@@ -19,7 +20,7 @@
     }
 
     &__div+&__div {
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     &__h2 {
@@ -45,20 +46,31 @@
 
 }
 
+
 @media only screen and (max-width: 689px) {
     .about .container {
-        background-image: url("../imges/Group\ 13\ \(1\)\ \(1\).png");
+        background-image: url("../imges/Group\ 13\ \(2\).png");
+        max-width: 689px;
+        width: 100%;
+        height: 118px;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 118px;
+        flex-direction: column;
+        margin-bottom: 1290px;   
     }
 
     .about__div {
         display: flex;
+        align-items: center;
+    }
+
+    .about__div_2 {
+        // display: flex;
+        text-align: center;
     }
 
     .about__h2 {
-        margin-left: 29px;
+        margin-left: 10px;
     }
 
     .about__text {
@@ -70,10 +82,13 @@
 
 @media only screen and (max-width: 375px) {
     .about .container {
-        background-image: url("../../imges/Group\ 13\ \(1\)\ \(1\).png");
+        max-width: 375px;
+        width: 100%;
+        background-image: url("../imges/Group\ 7.png");
         background-repeat: no-repeat;
         background-size: cover;
         height: 72px;
+        margin-bottom: 1700px;
     }
 
     .about__pic {
@@ -81,9 +96,14 @@
         height: 151px;
     }
 
+    .about__div {
+        display: block;
+        text-align: center;
+    }
+
     .about__div_2 {
-        flex-direction: column;
-        margin-left: 46px;
+        flex-direction: column; 
+        margin-left: -15px;
     }
 
 }

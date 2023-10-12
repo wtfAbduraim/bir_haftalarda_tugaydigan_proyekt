@@ -3,11 +3,16 @@
 
     .container {
         @include Flex;
+
+        & .header__logo {
+            display: block
+        }
+        & .header__mobile {
+            display: none;
+        }
     }
 
-    &__mobil {
-        display: none;
-    }
+
 
 }
 
